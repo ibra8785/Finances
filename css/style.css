@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root
+{
+    --color-red: #ff414a;
+    --color-white: white;
+}
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    overflow-x: hidden;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a, a:hover
+{
+    text-decoration: none;
+}
+
+/*______ NAV BAR ______*/
+
+.topNav
+{
+    font-size: 1.5rem;
+    position: fixed;
+    padding: 3rem 0;
+    background: transparen;
+    width: 100%;
+}
+
+.navLink li a
+{
+    color: white;
+    font-weight: bold;
+    color: white;
+}
+
+.navLink li a img
+{
+    height: 2rem;
+    width: 2rem;
+}
+
+.navLink li a:hover
+{
+    color: var(--color-red);
+    transition: all 1s;
+}
+
+/*______ HEADER ______*/
+
+.header
+{
+    min-height: 100vh;
+    background-image: url('../img/slide.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.headerTitle 
+{
+    padding-top: 20rem;
+    margin-top: 12rem;
+    position: relative;
+}
+
+.headerTitle h1
+{
+    font-size: 6.4rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.headerTitle h1 span
+{
+    color: var(--color-red);
+}
+
+.headerCard
+{
+    width: 70%;
+    min-height: 30rem;
+    background-color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10rem 0;
+}
+
+.contentContainer h2
+{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+
+}
+
+.contentContainer p
+{
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.btn__headerCard
+{
+    padding: 1rem 3rem;
+    background: var(--color-red);
+    color: white;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 3rem;
+}
+
+
+/*------------ SIDE BAR ------------*/
+
+.sideBar
+{
+    width: 5rem;
+    min-height: 35rem;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    top: 20%;
+    left: 97%;
+}
+
+.sideBar p
+{
+    position: absolute;
+    width: 10rem;
+    left: -10rem;
+    background-color: #ffffff;
+    z-index: 100;
+    padding: 2.2rem 1.5rem;
+    font-size: 1.4rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    display: none;
+}
+
+.sideBar div:hover p
+{
+    position: absolute;
+    width: 10rem;
+    left: -10rem;
+    background-color: aliceblue;
+    z-index: -100;
+    display: block;
+}
+
+.sideBar img
+{
+    height: 3.5rem;
+    width: 3.5rem;
+    margin : 1.5rem .8rem;
+}
+
+.sideBar img:hover
+{
+    background-color: #F0FFFF;
+}
+
+.sideBar div
+{
+    border-bottom: 1px solid #ccc;
+}
+
+/*______ SECTION 1 ______*/
+
+.sectionOne
+{
+    width: 100%;
+    min-height: 50rem;
+    background-color: #f3f3f7;
+    padding: 1.5rem 0;
+    clear: both;
+}
+.sectionOne__title
+{
+    margin-top: 40rem;
+}
+
+.sectionOne__title h2
+{
+    color: #3f3d56;
+    font-size: 3.4rem;
+    font-weight: bolder;
+}
+
+.sectionOne__title p
+{
+    color: #3f3d56;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+.cardText
+{
+    width: 100%;
+    margin: 5rem 0;
+}
+
+.cardContent
+{
+    padding: 2rem 2rem;
+    position: relative;
+    min-height: 40rem;
+    width: 100%;
+}
+
+.cardContent h2
+{
+    font-size: 2.4rem;
+    color: #3f3d56;
+}
+
+.cardContent p
+{
+    font-size: 1.6rem;
+    color: #3f3d56;
+}
+
+.cardContent a
+{
+    font-size: 6.6rem;
+    color: var(--color-red);
+}
+
+.cardContent img
+{
+    margin-top: 3rem;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50% , -50%);
+}
+
+/*______ SECTION 2 ______*/
+
+.sectionTwo
+{
+    width: 100%;
+    min-height: 50rem;
+    background-color: var(--color-white);
+    padding: 4rem 0 0;
+}
+
+.sectionTwo h2
+{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.sectionTwo h1
+{
+    font-size: 4rem;
+    color: #7f7bae;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.leftTwo
+{
+    padding-top: 4rem;
+}
+
+.iconTwo
+{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin-right: 3rem;
+}
+
+.iconTwo img
+{
+    height: 4.7rem;
+    width: 4.7rem;
+}
+
+
+.sectionIcon
+{
+    margin-top: 6rem;
+}
+
+.sectionIcon:hover
+{
+    margin-left: 1rem;
+    transition: all .5s;
+}
+
+.sectionTwo h3
+{
+    font-size: 2.5rem;
+    color: #3f3d56;
+    font-weight: bold;
+}
+
+.sectionTwo  p
+{
+    font-size: 1.4rem;
+    color: #898989;
+}
+
+.bordertop
+{
+    border-top: 1px solid #ccc;
+    padding-top: 2rem;
+}
+
+/*______ SECTION 3 ______*/
+
+.sectionThree
+{
+    width: 100%;
+    background-image: url(../img/susbscribe-bg.jpg);
+    min-height: 50rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contentSection3
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.contentSection3 h1
+{
+    font-size: 3.6rem;
+    color: white;
+    font-weight: bold;
+}
+
+.contentSection3 h1 span
+{
+    font-size: 3.6rem;
+    color: #ff414a;
+    font-style: italic;
+}
+
+.contentSection3 p
+{
+    font-size: 1.6rem;
+    color: white;
+}
+
+.contentSection3 form
+{
+    margin-top: 5rem;
+}
+
+.contentSection3 .input
+{
+    width: 41rem;
+    padding: 1.5rem;
+    background-color: #626075;
+    border-radius: 3rem;
+    border: 0.5px solid #626075;
+}
+
+.contentSection3 .send
+{
+    width: 9rem;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    margin-left: -7rem;
+    background-color: white;
+}
+
+/*______ SECTION 4 ______*/
+
+.sectionFour
+{
+    padding: 6rem 0;
+    width: 100%;
+}
+
+.contentSection4
+{
+    margin: 10rem 0;
+}
+
+.contentSection4 h1
+{
+    font-size: 10rem;
+}
+
+.contentSection4 p
+{
+    font-size: 1.6rem;
+    color: #898989;
+    margin-bottom: 3rem;
+}
+
+.contentSection4 h3
+{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.contentSection4 span
+{
+    font-size: 1.3rem;
+    color: #898989;
+    font-style: italic;
+}
+
+.imgSection4
+{
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.basSection4
+{
+    position: relative;
+    padding: 5rem 0;
+}
+
+.basSection4 h1
+{
+    font-size: 4rem;
+    color: #3f3d56;
+    font-weight: bold;
+}
+
+.basSection4 span
+{
+    color: var(--color-red);
+    font-style: italic
+}
+
+.btnBas
+{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50% , -50%);
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    color: white;
+    background-color: var(--color-red);
+    border-radius: 2rem;
+    border: none;
+}
+
+/*______ FOOTER ______*/
+
+.footer
+{
+    width: 100%;
+    min-height: 30rem;
+    background-color: #3f3d56;
+    padding: 2rem 0;
+}
+
+.footer img
+{
+    margin-bottom: 5.2rem;
+}
+
+.footer h2
+{
+    color: white;
+    margin-bottom: 4rem;
+}
+
+.footer p
+{
+    font-size: 1.4rem;
+    color: #bebbbc;
+}
+
+.footer a
+{
+    color: #bebbbc;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.footer a:hover
+{
+    color: var(--color-red);
+}
+
+.copyright
+{
+    margin: 5rem auto 1rem;
+}
+
+.flech
+{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--color-red);
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.flech p
+{
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
